@@ -1,4 +1,4 @@
-module github.com/nimahkh/persian_tools
+module github.com/h-varmazyar/persian_tools
 
 go 1.13
 
