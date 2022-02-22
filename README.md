@@ -21,7 +21,7 @@
 - [X] Add and remove commas to numbers.
 - [X] Find city and province name by national code(code-e Melli).
 - [X] Validate Iranian national number(code-e Melli).
-- [X] Validate and parse Iranian mobile number.
+- [X] Validate phone number and get Iranian phone number details.
 
 #### How to use it?
 
@@ -58,9 +58,8 @@ Negative := digits.DigitToWord("-156789") // منفی صد پنجاه و شش ه
 ##### Phone number
 
 ```go
-isValid := phone.ValidateMobile("09307407541") // true
-isValid := phone.ValidateMobile("0930740741") //false
-mobile, err := phone.ParseMobile("00989307407541") //{099913 07541 09991307541 9991307541 آپ‌تل [همه استان‌ها] دائمی}  , nil
+phone, err := phone.GetPhoneNumberDetails("0930740741") // {011 33001112 01133001112 1133001112 مخابرات ایران [مازندران] ثابت} , nil
+mobile, err := phone.GetPhoneNumberDetails("00989307407541") //{099913 07541 09991307541 9991307541 آپ‌تل [همه استان‌ها] دائمی}  , nil
 ```
 
 #### Bank
