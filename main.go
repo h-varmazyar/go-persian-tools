@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/h-varmazyar/persian_tools/bank"
-	bills "github.com/h-varmazyar/persian_tools/bill"
-	digits "github.com/h-varmazyar/persian_tools/digit"
-	"github.com/h-varmazyar/persian_tools/national_id"
+	"github.com/h-varmazyar/gopet/bank"
+	bills "github.com/h-varmazyar/gopet/bill"
+	digits "github.com/h-varmazyar/gopet/digit"
+	"github.com/h-varmazyar/gopet/national_id"
 )
 
 func main() {

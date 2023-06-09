@@ -5,5 +5,5 @@ RUN cd /src && make test build
 
 FROM alpine
 WORKDIR /app
-COPY --from=builder /src/persian_tools /app/
-ENTRYPOINT ./persian_tools
+COPY --from=builder /src/gopet /app/
+ENTRYPOINT ./gopet

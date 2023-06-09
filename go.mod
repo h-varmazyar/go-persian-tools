@@ -1,4 +1,4 @@
-module github.com/h-varmazyar/persian_tools
+module github.com/h-varmazyar/gopet
 
 go 1.13
 

@@ -2,7 +2,7 @@
 	<p align="center">
 		<img src="https://raw.githubusercontent.com/persian-tools/persian-tools/master/images/logo.png" width="200" />
 	</p>
-	<h1 align="center">Persian tools</h1>
+	<h1 align="center">Go Persian tools</h1>
 	<p align="center">An anthology of a variety of tools for the Persian language in Golang</p>
 </div>
 
@@ -28,7 +28,7 @@
 first we have to create our request :
 
 ```go
-bills "github.com/h-varmazyar/persian_tools/bills"
+bills "github.com/h-varmazyar/gopet/bills"
 .
 .
 .
