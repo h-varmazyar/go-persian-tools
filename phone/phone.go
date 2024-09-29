@@ -82,21 +82,21 @@ type Phone struct {
 }
 
 func GetPhoneNumberDetails(phoneNumber string) (*Phone, error) {
-	if r, b := isMobile(phoneNumber); b {
+	if r, b := IsMobile(phoneNumber); b {
 		return parseMobile(r, phoneNumber)
-	} else if r, b := isLandline(phoneNumber); b {
+	} else if r, b := IsLandline(phoneNumber); b {
 		return parseLandline(r, phoneNumber)
 	} else {
 		return nil, ErrPhoneNotValid
 	}
 }
 
-func isMobile(number string) (*regexp.Regexp, bool) {
+func IsMobile(number string) (*regexp.Regexp, bool) {
 	r := regexp.MustCompile(`^(\+98|98|0098)?0?(9\d{9}$)`)
 	return r, r.MatchString(number)
 }
 
-func isLandline(number string) (*regexp.Regexp, bool) {
+func IsLandline(number string) (*regexp.Regexp, bool) {
 	r := regexp.MustCompile(`^(\+98|98|0098)?0?(\d{10}$)`)
 	return r, r.MatchString(number)
 }
